@@ -1,5 +1,4 @@
 let plantsContaner = document.getElementById('product-list')
-
 plants.forEach(function(plant){
     plantsContaner.insertAdjacentHTML('beforeend',`
         <article class="plant-card" style="--accent:`+ plant.color + `">

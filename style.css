@@ -287,6 +287,8 @@ button { font-family: inherit; cursor: pointer; }
 .not-found-icon { font-size: 3rem; }
 .not-found h2 { font-family: 'Fraunces', serif; color: var(--green); margin: 14px 0 8px; }
 .not-found p { color: var(--muted); }
+.not-found img { height: 150px;}
+
 
 /* ---------- Responsive ---------- */
 @media (max-width: 800px) {
