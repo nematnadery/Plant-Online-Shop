@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant | Sprout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Decorative background shapes -->
+  <span class="leaf leaf-1"></span>
+  <span class="leaf leaf-2"></span>
+
+  <div class="app">
+
+    <header class="header">
+      <a href="index.html" class="logo">Sprout<span>.</span></a>
+
+      <!-- Back button: for the History object (history.back()) -->
+      <button type="button" class="btn-back" id="back-btn">← Back</button>
+    </header>
+
+    <!-- ===== Plant details =====
+         JS reads the id from the URL (product.html?id=1) with URLSearchParams,
+         finds the plant and fills the elements below.
+         The sample content is only here so you can see the style; JS will replace it.
+         Set the soft color from JS with:
+         document.getElementById('detail').style.setProperty('--accent', product.color)
+    -->
+    <main class="detail" id="detail" style="--accent: #cfe3c8;">
+
+      <section class="detail-visual">
+        <!-- Replace the emoji with an <img>, for example: <img src="img/monstera.png" alt="Monstera"> -->
+        <div class="detail-arch" id="detail-img">
+          <span class="img-placeholder">🪴</span>
+        </div>
+      </section>
+
+      <section class="detail-info">
+        <span class="detail-label">Indoor plant</span>
+        <h1 class="detail-name" id="detail-name">Monstera</h1>
+        <p class="detail-price" id="detail-price">$24</p>
+        <p class="detail-desc" id="detail-desc">
+          A bold leafy plant that grows happily in bright, indirect light.
+        </p>
+
+        <a href="index.html" class="btn-home">Browse all plants</a>
+      </section>
+
+    </main>
+
+    <!-- Shown by JS when the id in the URL doesn't match any plant
+         (remove the class "hidden" to show it, and hide #detail) -->
+    <div class="not-found hidden" id="not-found">
+      <span class="not-found-icon">🥀</span>
+      <h2>Plant not found</h2>
+      <p>This plant doesn't exist or was removed.</p>
+      <a href="index.html" class="btn-home">Back to the shop</a>
+    </div>
+
+  </div>
+  <script src="data.js"></script>
+  <script src="product.js"></script>
+</body>
+</html>

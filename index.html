@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sprout | Plant Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Decorative background shapes -->
+  <span class="leaf leaf-1"></span>
+  <span class="leaf leaf-2"></span>
+
+  <div class="app">
+
+    <header class="header">
+      <a href="index.html" class="logo">Sprout<span>.</span></a>
+      <span class="header-note">Plants for every corner</span>
+    </header>
+
+    <section class="intro">
+      <span class="eyebrow">Spring collection</span>
+      <h1>Bring a little <em>green</em> home.</h1>
+      <p>Pick a plant to see more.</p>
+    </section>
+
+    <!-- JS adds the plant cards here.
+
+         Template of one card (3 samples are below so you can see the style; delete them when JS works):
+
+         <article class="plant-card" style="--accent: #cfe3c8;">
+           <div class="plant-img">
+             <img src="img/monstera.png" alt="Monstera">
+           </div>
+           <div class="plant-body">
+             <h3 class="plant-name">Monstera</h3>
+             <div class="plant-footer">
+               <span class="plant-price">$24</span>
+               <a href="product.html?id=1" class="btn-view">View →</a>
+             </div>
+           </div>
+         </article>
+
+         Each card has its own soft color. Set it from JS with:
+         cardElem.style.setProperty('--accent', item.color)
+    -->
+    <main class="plant-grid" id="product-list">      
+
+    </main>
+
+  </div>
+  
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
